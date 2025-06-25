@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mychat App</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="JS/client.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/emojionearea.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="JS/emojionearea.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="messageIcon.png" alt="Mychat Logo" />
+        <h1>Welcome to Mychat</h1>
+    </header>
+
+    <main class="chat-container">
+        <div class="chat-box" id="chat-box">
+
+        </div>
+
+        <form id="send-container" class="send-container">
+            <input type="text" name="messageInp" id="messageInp" placeholder="Type a message..." />
+            <button class="btn" type="submit">
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Send
+            </button>
+        </form>
+    </main>
+
+    <script>
+        $(document).ready(function () {
+            $("#messageInp").emojioneArea({
+                pickerPosition: "top"
+            });
+        });
+    </script>
+</body>
+
+</html>

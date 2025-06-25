@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  background: radial-gradient(circle, #e0c3fc, #8ec5fc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.chat-container {
+  width: 90%;
+  max-width: 800px;
+  background: #fff;
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-image: url("../images/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #ddd;
+}
+
+.message {
+  max-width: 60%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  word-wrap: break-word;
+
+}
+
+.left {
+  background-color: #607d8b;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.right {
+  background-color: #4caf50;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.send-container {
+  display: flex;
+  padding: 15px;
+  background-color: #f0f0f0;
+  gap: 10px;
+}
+
+#messageInp {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.btn {
+  padding: 12px 20px;
+  background-color: #2196f3;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0b7dda;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.message.center {
+  width: 100%;
+  text-align: center;
+  background: none;
+  color: #444;
+  font-style: italic;
+  font-size: 14px;
+  padding: 5px 0;
+  margin: 5px 0;
+}
